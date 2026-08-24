@@ -10,48 +10,30 @@ int main()
     printf("Enter number c:");
     scanf("%d", &c);
     if (a>b)
-    {
-        printf("a is largest");
-        if (a>c)
-        {
-            printf("a is largest"); 
-        }
-        else 
-        printf("c is largest");
-    }
-
-
-
-
-    if (b>a)
-    {
-        printf("b is largest");
-        if(b>c)
-        {
-            printf("b is largest");
-        }
-        else 
-        printf("b is largest");
-    }
-    
-
-
-
-    //a=b
+{
     if (a>c)
     {
-        printf("a and b is largest");
-        if (c>a)
-        {
-            printf("c is largest");
-        }
+        printf("a is largest");
     }
-
-
-
-
-
-
-
+    else
+    {
+        printf("c is largest");
+    }
+}
+else
+{
+    if (b>c)
+    {
+        printf("b is largest");
+    }
+    else
+    {
+        if (a==b && b==c)
+            printf("a=b=c is largest");
+        else
+            printf("c is largest");
+    }
+}
+    return 0;
 
 }
