@@ -1,3 +1,4 @@
+//prime number check 
 #include<stdio.h>
 int main()
 {
